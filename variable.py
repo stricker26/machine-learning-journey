@@ -30,7 +30,7 @@ user["age"] = 38
 print("Updated user:", user)
 
 # Condition
-if(user["is_admin"]):
+if user["is_admin"]:
     print("Admin user")
 else:
     print("Regular user")
