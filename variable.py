@@ -16,3 +16,28 @@ print("First number:", numbers[0])
 # Loop
 for num in numbers:
     print("Number:", num)
+
+# Dictionar
+user = {
+    "name": "Jonas",
+    "email": "jonas@email.com",
+    "is_admin": False
+}
+print("User name:", user["name"])
+
+# Add new key
+user["age"] = 38
+print("Updated user:", user)
+
+# Condition
+if(user["is_admin"]):
+    print("Admin user")
+else:
+    print("Regular user")
+
+# None (null equivalent)
+token = None
+
+if token is None:
+    print("No token found")
+    
