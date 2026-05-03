@@ -17,7 +17,7 @@ print("First number:", numbers[0])
 for num in numbers:
     print("Number:", num)
 
-# Dictionar
+# Dictionary
 user = {
     "name": "Jonas",
     "email": "jonas@email.com",
