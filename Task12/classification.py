@@ -11,7 +11,6 @@ data = [
     ("Click here to claim reward", "spam"),
     ("Earn money fast from home", "spam"),
     ("Exclusive promo just for you", "spam"),
-
     ("Hey are we still meeting today", "not spam"),
     ("Can you send me the file", "not spam"),
     ("Let's have lunch tomorrow", "not spam"),
