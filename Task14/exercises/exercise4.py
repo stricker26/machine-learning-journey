@@ -16,5 +16,3 @@ new_data = pd.DataFrame([
 salary = model.predict(new_data)
 
 print(salary)
-print("Coefficients:", model.coef_)
-print("Intercept:", model.intercept_)
