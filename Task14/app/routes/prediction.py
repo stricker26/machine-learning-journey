@@ -14,5 +14,5 @@ def predict(data: PredictionRequest):
     )
 
     return {
-        "predicted_salary": salary
+        "predicted_salary": f"{salary:.2f}"
     }
