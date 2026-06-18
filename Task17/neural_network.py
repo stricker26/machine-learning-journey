@@ -25,11 +25,12 @@ class StudentPredictor(nn.Module):
         super().__init__()
 
         self.hidden = nn.Linear(1, 3)
+        self.relu = nn.ReLU() #Rectified Linear Unit
         self.output = nn.Linear(3, 1)
 
     def forward(self, x):
-
         x = self.hidden(x)
+        x = self.relu(x)
         x = self.output(x)
 
         return x
@@ -41,7 +42,7 @@ criterion = nn.MSELoss()
 
 optimizer = torch.optim.SGD(
     model.parameters(),
-    lr=0.01
+    lr=0.001
 )
 
 # Training Loop
@@ -64,3 +65,10 @@ for epoch in range(1000):
         print(
             f"Epoch {epoch}, Loss: {loss.item():.4f}"
         )
+
+with torch.no_grad():
+    prediction = model(
+        torch.tensor([[5.0]])
+    )
+
+    print(prediction)
